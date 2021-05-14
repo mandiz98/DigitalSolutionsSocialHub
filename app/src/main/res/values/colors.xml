@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="blacker">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#EFEFEF</color>
+    <color name="transparent">#00000000</color>
+
+<!--    HQV greys-->
+    <color name="black">#201E1E</color>
+    <color name="grey_500">#595959</color>
+    <color name="grey_100">#F3F2F0</color>
+
+<!--    HQV brand colors-->
+    <color name="hqv_blue">#273160</color>
+    <color name="orange_300">#ECA994</color>
+    <color name="orange_500">#F35321</color>
+    <color name="orange_600">#EB410C</color>
+
+<!--    Functional colors-->
+    <color name="marigold">#FFC800</color>
+    <color name="red">#DC2832</color>
+    <color name="grassy_green">#31B900</color>
+    <color name="bluetooth_blue">#4C8DF8</color>
+    <color name="blue">#07AFDC</color>
+
+    <!-- Text Colors -->
+    <color name="black_30">#4D201E1E</color>
+    <color name="black_50">#80201E1E</color>
+    <color name="black_70">#B2201E1E</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_70">#B2FFFFFF</color>
+
 </resources>

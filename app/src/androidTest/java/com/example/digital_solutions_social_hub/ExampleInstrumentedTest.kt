@@ -1,4 +1,4 @@
-package com.example.digitalsolutionssocialhub
+package com.example.digital_solutions_social_hub
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

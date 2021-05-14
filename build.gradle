@@ -1,16 +1,53 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext.kotlin_version = "1.4.32"
+
+    // App
+    ext.gradle_plugin_version = "4.1.3"
+    ext.appcompat_version = "1.2.0"
+
+    // Kotlin
+    ext.kotlin_gradle_version = "1.5.0"
+    ext.coroutines_version = "1.4.2"
+
+    // Google
+    ext.material_version = "1.3.0"
+
+    // OkHttp & Retrofit
+    ext.okhttp_version = "4.9.0"
+    ext.retrofit_version = "2.9.0"
+    ext.gson_version = "2.8.6"
+
+    // AndroidX
+    ext.ax_annotation_version = "1.1.0"
+    ext.ax_core_version = "1.3.2"
+    ext.ax_constraint_layout_version = "2.0.4"
+    ext.ax_fragment_version = "1.3.3"
+    ext.ax_lifecycle_version = "2.3.1"
+    ext.ax_nav_version = "2.3.5"
+    ext.ax_fragment_ktx_version = "2.3.5"
+    ext.ax_lifecycle_ext_version = "2.2.0"
+
+    // Glide
+    ext.glide_version = "4.12.0"
+
+    // Test
+    ext.junit_version = "4.13.2"
+    ext.junit_test_version = "1.1.2"
+    ext.espresso_version = "3.3.0"
+
+    // Hilt
+    ext.hilt_version = "2.35.1"
+    ext.hilt_compiler_version = "1.0.0"
+
     repositories {
         google()
         jcenter()
     }
-    dependencies {
-        classpath "com.android.tools.build:gradle:4.1.3"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_plugin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_gradle_version"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
     }
 }
 

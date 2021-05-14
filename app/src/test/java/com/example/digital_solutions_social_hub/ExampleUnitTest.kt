@@ -1,4 +1,4 @@
-package com.example.digitalsolutionssocialhub
+package com.example.digital_solutions_social_hub
 
 import org.junit.Test
 
