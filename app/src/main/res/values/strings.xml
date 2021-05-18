@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Digital Solutions Social Hub</string>
+    <string name="title_dssh">Digital Solutions \nSocial Hub</string>
+    <string name="description_dssh">Tool to assist Husqvarna group with social events.</string>
+    <string name="title_log_in">Log in</string>
+    <string name="description_connect_to_dssh">Connect to Digital Solutions Social Hub</string>
+    <string name="btn_log_in">Log in using Husqvarna ID</string>
+    <string name="description_legal">Your account is managed by Husqvarna Group. \nAll rights reserved.</string>
+    <string name="title_rules">Rules</string>
+    <string name="title_news">News</string>
+    <string name="title_teams">Teams</string>
+    <string name="title_categories">Categories</string>
+    <string name="description_status_value">Status: %s</string>
+    <string name="title_journal">Journal</string>
+    <string name="title_team_members">Team members:</string>
+    <string name="title_hall_of_fame">Hall of fame</string>
+    <string name="content_description_icon_for_the_event">Icon for the event.</string>
+    <string name="content_description_color_for_the_status_of_the_event">Color for the status of the event.</string>
+    <string name="content_description_button_for_adding_entries_into_the_journal">Button for adding entries into the journal.</string>
+    <string name="content_description_team_icon">Team icon.</string>
+    <string name="content_description_husqvarna_groups_logo">Husqvarna group\'s logo</string>
+    <string name="content_description_toolbar_icon">Toolbar icon</string>
 </resources>

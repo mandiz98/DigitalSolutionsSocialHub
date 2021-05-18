@@ -3,7 +3,11 @@
     <declare-styleable name="AppToolbar">
         <attr name="title" format="string" />
         <attr name="status" format="string" />
+        <attr name="navUp" format="boolean"/>
         <attr name="imgIcon" format="integer" />
     </declare-styleable>
 
+    <declare-styleable name="EventView">
+        <attr name="eventStatus" format="integer"/>
+    </declare-styleable>
 </resources>

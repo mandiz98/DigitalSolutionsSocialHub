@@ -15,6 +15,5 @@
         <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.OutlinedButton</item>
 
         <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
-
     </style>
 </resources>

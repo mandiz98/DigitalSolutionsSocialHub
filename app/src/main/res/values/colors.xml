@@ -2,7 +2,6 @@
 <resources>
     <color name="blacker">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background">#EFEFEF</color>
     <color name="transparent">#00000000</color>
 
 <!--    HQV greys-->
@@ -29,5 +28,9 @@
     <color name="black_70">#B2201E1E</color>
     <color name="white_50">#80FFFFFF</color>
     <color name="white_70">#B2FFFFFF</color>
+
+    <color name="status_active">#31B900</color>
+    <color name="status_upcoming">#FFC800</color>
+    <color name="status_closed">#FFFFFF</color>
 
 </resources>

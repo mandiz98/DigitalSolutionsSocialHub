@@ -4,6 +4,8 @@ import android.content.Context
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.view.View
+import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
@@ -33,23 +35,30 @@ class AppToolbar(context: Context, attributeSet: AttributeSet) :
             binding.imgIcon.setImageDrawable(value)
         }
 
-    private var onMenuItemClickListener: (() -> Unit)? = null
-    fun onMenuItemClickListener(function: () -> Unit) {
-        onMenuItemClickListener = function
+    private var onIconItemClickListener: (() -> Unit)? = null
+    fun onIconItemClickListener(function: () -> Unit) {
+        onIconItemClickListener = function
     }
 
     init {
         context.theme.obtainStyledAttributes(attributeSet, R.styleable.AppToolbar, 0, 0).apply {
             try {
+                val navUp = getBoolean(R.styleable.AppToolbar_navUp, true)
                 binding.txtTitle.text = getString(R.styleable.AppToolbar_title) ?: ""
                 binding.txtStatus.text = getString(R.styleable.AppToolbar_status) ?: ""
-                binding.btnBack.setImageDrawable(
-                    ContextCompat.getDrawable(
-                        context,
-                        R.drawable.ic_back
+                if (!navUp) {
+                    binding.btnBack.visibility = View.GONE
+                } else {
+                    binding.btnBack.setImageDrawable(
+                        ContextCompat.getDrawable(
+                            context,
+                            R.drawable.ic_back
+                        )
                     )
-                )
+                    binding.btnBack.visibility = View.VISIBLE
+                }
                 binding.imgIcon.setImageDrawable(getDrawable(R.styleable.AppToolbar_imgIcon))
+                binding.imgIcon.scaleType = ImageView.ScaleType.CENTER
             } finally {
                 recycle()
             }
@@ -58,7 +67,7 @@ class AppToolbar(context: Context, attributeSet: AttributeSet) :
             findNavController().navigateUp()
         }
         binding.imgIcon.setOnClickListener {
-            onMenuItemClickListener?.invoke()
+            onIconItemClickListener?.invoke()
         }
     }
 }

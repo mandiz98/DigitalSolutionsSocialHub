@@ -14,12 +14,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DigitalSolutionsSocialHub">
 
-        <activity android:name="com.example.digital_solutions_social_hub.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name="com.example.digital_solutions_social_hub.MainActivity"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+        <activity android:name=".ui.authentication.AuthenticationActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+<!--        <activity android:name="com.amazonaws.mobileconnectors.cognitoauth.activities.CustomTabsRedirectActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.VIEW"/>-->
+<!--                <category android:name="android.intent.category.DEFAULT"/>-->
+<!--                <category android:name="android.intent.category.BROWSABLE"/>-->
+
+<!--                <data android:scheme="https" android:host="blabla.bal.com" android:path="/login"/>-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        
     </application>
 </manifest>
