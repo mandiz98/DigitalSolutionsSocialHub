@@ -10,11 +10,12 @@
     <color name="grey_100">#F3F2F0</color>
 
 <!--    HQV brand colors-->
-    <color name="hqv_blue">#273160</color>
     <color name="orange_300">#ECA994</color>
     <color name="orange_500">#F35321</color>
     <color name="orange_600">#EB410C</color>
-
+    <color name="blue_100">#6190ED</color>
+    <color name="blue_300">#4769AD</color>
+    <color name="blue_600">#273160</color>
 <!--    Functional colors-->
     <color name="marigold">#FFC800</color>
     <color name="red">#DC2832</color>
@@ -29,8 +30,8 @@
     <color name="white_50">#80FFFFFF</color>
     <color name="white_70">#B2FFFFFF</color>
 
-    <color name="status_active">#31B900</color>
-    <color name="status_upcoming">#FFC800</color>
-    <color name="status_closed">#FFFFFF</color>
+    <color name="status_active">@color/grassy_green</color>
+    <color name="status_upcoming">@color/marigold</color>
+    <color name="status_closed">@color/white</color>
 
 </resources>

@@ -23,15 +23,14 @@
             </intent-filter>
         </activity>
 
-<!--        <activity android:name="com.amazonaws.mobileconnectors.cognitoauth.activities.CustomTabsRedirectActivity">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.VIEW"/>-->
-<!--                <category android:name="android.intent.category.DEFAULT"/>-->
-<!--                <category android:name="android.intent.category.BROWSABLE"/>-->
+        <activity android:name="com.amazonaws.mobileconnectors.cognitoauth.activities.CustomTabsRedirectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="TODO()" android:path="/login"/>
+            </intent-filter>
+        </activity>
 
-<!--                <data android:scheme="https" android:host="blabla.bal.com" android:path="/login"/>-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-        
     </application>
 </manifest>

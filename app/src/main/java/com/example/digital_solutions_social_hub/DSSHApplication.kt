@@ -9,15 +9,15 @@ import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class DSSHApplication : Application() {
-//    override fun onCreate() {
-//        super.onCreate()
-//
-//        try {
-//            Amplify.addPlugin(AWSCognitoAuthPlugin())
-//            Amplify.configure(applicationContext)
-//            Log.i("DSSHApplication", "Initialized Amplify")
-//        } catch (error: AmplifyException){
-//            Log.e("DSSHApplication", "Could not initialize amplify",error)
-//        }
-//    }
+    override fun onCreate() {
+        super.onCreate()
+
+        try {
+            Amplify.addPlugin(AWSCognitoAuthPlugin())
+            Amplify.configure(applicationContext)
+            Log.i("DSSHApplication", "Initialized Amplify")
+        } catch (error: AmplifyException){
+            Log.e("DSSHApplication", "Could not initialize amplify",error)
+        }
+    }
 }
